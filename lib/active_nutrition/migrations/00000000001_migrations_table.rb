@@ -2,7 +2,7 @@
 
 module ActiveNutrition
   module Migrations
-    class MigrationsTable < ActiveRecord::Migration
+    class MigrationsTable < ActiveRecord::Migration[4.2]
       def self.up
         create_table :active_nutrition_migrations do |t|
           t.integer :sequence_no

@@ -23,7 +23,7 @@ module ActiveNutrition
       end
 
       def nutrition_facts
-        @nutrition_facts ||= NutritionFacts.new(NutritionFact.wrap(base_model.nutrition_facts))
+        @nutrition_facts ||= NutritionFacts.new(NutritionFact.wrap(base_model.nutrition_facts.to_a))
       end
 
       def weights
